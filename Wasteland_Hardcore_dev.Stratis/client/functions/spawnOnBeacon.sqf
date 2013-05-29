@@ -137,6 +137,8 @@ sleep 5;
 
 _mins = floor(60 * (daytime - floor(daytime)));
 [
-	"404 Wasteland","Spawn Beacon",
+	"Wasteland Hardcore","Spawn Beacon",
 	format ["%1:%3%2", floor(daytime), _mins, if(_mins < 10) then {"0"} else {""}]
 ] spawn BIS_fnc_infoText;
+
+player addAction [("<t color=""#ffc600"">" + ("View Character") + "</t>"),'dsl_gear_dialog.sqf',["paperdoll"],-100,true,false,'',"_target == player"];
