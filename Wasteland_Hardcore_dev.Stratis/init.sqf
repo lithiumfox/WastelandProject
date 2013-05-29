@@ -14,7 +14,7 @@ X_Server = false;
 X_Client = false;
 X_JIP = false;
 hitStateVar = false;
-versionName = "v0.01 Alpha";
+versionName = "v0.02 Alpha";
 
 if(isServer) then { X_Server = true;};
 if(!isDedicated) then { X_Client = true;};
@@ -57,4 +57,10 @@ if(X_Server) then {
 //init 3rd Party Scripts
 [] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
 [] execVM "addons\proving_Ground\init.sqf";
-//[0.1, 0.5, 0.5] execVM "addons\scripts\DynamicWeatherEffects.sqf";
+[0.1, 0.5, 0.5] execVM "addons\scripts\DynamicWeatherEffects.sqf";
+
+sleep .01; 
+
+call compile preprocessFileLineNumbers "dsl_gear_get_lists.sqf";
+
+player addAction [("<t color=""#ffc600"">" + ("Character Customizer") + "</t>"),'dsl_gear_dialog.sqf',["paperdoll"],-100,true,false,'',"_target == player"];

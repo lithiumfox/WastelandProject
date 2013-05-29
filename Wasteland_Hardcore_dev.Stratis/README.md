@@ -1,2 +1,1 @@
-Arma3-404Wasteland-Stratis
-==========================
+This is a WIP. 

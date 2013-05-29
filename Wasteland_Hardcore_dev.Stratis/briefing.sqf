@@ -16,6 +16,17 @@ player createDiaryRecord["wasteland",
 
 player createDiaryRecord["changelog",
 [
+"0.02",
+"
+<br/>
+		- Added "Paper Doll" Character View<br/>
+		- Modified various items.<br/><br/>
+"
+]
+];
+
+player createDiaryRecord["changelog",
+[
 "0.01",
 "
 <br/>
