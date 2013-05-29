@@ -1,1 +1,2 @@
-This is a WIP. 
+Arma3-404Wasteland-Stratis
+==========================
