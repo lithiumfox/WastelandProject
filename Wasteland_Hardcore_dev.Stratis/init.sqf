@@ -59,8 +59,6 @@ if(X_Server) then {
 [] execVM "addons\proving_Ground\init.sqf";
 //[0.1, 0.5, 0.5] execVM "addons\scripts\DynamicWeatherEffects.sqf";
 
-_null = [] execvm "addons\scripts\stanceIndicator.sqf";
-
 sleep .01; 
 
 call compile preprocessFileLineNumbers "dsl_gear_get_lists.sqf";

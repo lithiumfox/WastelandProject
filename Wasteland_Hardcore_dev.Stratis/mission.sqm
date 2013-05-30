@@ -20,7 +20,6 @@ class Mission
 	class Intel
 	{
 		briefingName="Wasteland Hardcore - v0.02";
-		briefingDescription="A harsh survival sandbox";
 		resistanceWest=0;
 		startWeather=0.10000001;
 		startWind=0.1;
@@ -34,10 +33,12 @@ class Mission
 		day=6;
 		hour=14;
 		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
 	};
 	class Groups
 	{
-		items=38;
+		items=39;
 		class Item0
 		{
 			side="WEST";
@@ -1115,6 +1116,24 @@ class Mission
 					skill=0.60000002;
 					text="gunStore3";
 					init="this addEventHandler['handledamage', {false}]; this disableAI 'MOVE'; this DisableAI 'ANIM'; this disableAI 'FSM'; removeAllWeapons this; this setPos(getMarkerPos 'Store_Gun_3');";
+				};
+			};
+		};
+		class Item38
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1736.8351,5.5,5782.3003};
+					id=68;
+					side="WEST";
+					vehicle="B_sniper_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
 				};
 			};
 		};
@@ -2229,6 +2248,8 @@ class Intro
 		day=6;
 		hour=14;
 		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
 	};
 };
 class OutroWin
@@ -2257,6 +2278,8 @@ class OutroWin
 		day=6;
 		hour=14;
 		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
 	};
 };
 class OutroLoose
@@ -2285,5 +2308,7 @@ class OutroLoose
 		day=6;
 		hour=14;
 		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
 	};
 };

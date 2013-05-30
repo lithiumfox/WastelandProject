@@ -38,7 +38,6 @@ class RscTitles {
     #include "client\systems\hud\dialog\hud.hpp"
 	#include "client\systems\playerMenu\dialog\welcome.hpp"
 	#include "client\systems\newicons.hpp"
-	#include "GUI\stanceIndicator.hpp"
 };
 
 #include "GUI\resincl.hpp"
